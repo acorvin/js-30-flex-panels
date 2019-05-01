@@ -1,7 +1,10 @@
+// Get audio
+const audio = new Audio('audio/shutter.wav')
 // Get panels by class
 const panels = document.querySelectorAll('.panel')
 // Open panels, transition-in, show child content on enter
 function panelOpen() {
+  audio.play()
   this.classList.add('open')
   this.classList.add('open-active')
 }
